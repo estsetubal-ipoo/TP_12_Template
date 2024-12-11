@@ -32,6 +32,22 @@ public class Television {
      * Constructs a new Television instance with factory default channels.
      */
     public Television() {
+        // TODO:
+        // Initialize channel list and put in factory settings:
+        // implement and call factorSettings() method.
+
+        // Then, implement the methods of this class by order
+        // of appearance; remove these comments.
+
+        // At some points of the code, you are suggested to test
+        // the functionality of the class in the main program.
+    }
+
+    /**
+     * Resets the television to its factory settings, clearing all channels and
+     * loading the default set.
+     */
+    public void factorySettings() {
         // TODO
     }
 
@@ -67,73 +83,6 @@ public class Television {
     }
 
     /**
-     * Tunes the television to the channel at the specified position.
-     *
-     * @param position The position of the channel to tune to.
-     * @return {@code true} if the channel was successfully tuned, otherwise {@code false}.
-     */
-    public boolean tunePosition(int position) {
-        // TODO
-        return false;
-    }
-
-    /**
-     * Toggles the favorite status of the currently tuned channel.
-     *
-     * @return {@code true} if the favorite status was successfully toggled, otherwise {@code false}.
-     */
-    public boolean toggleFavorite() {
-        // TODO
-        return false;
-    }
-
-    /**
-     * Adds a new channel to the television.
-     * There cannot exist channels with the same frequency.
-     *
-     * @param channel The channel to add.
-     * @return {@code true} if the channel was successfully added, otherwise {@code false}.
-     */
-    public boolean addChannel(Channel channel) {
-        // TODO
-        return false;
-    }
-
-    /**
-     * Removes the channel at the specified position.
-     *
-     * @param position The position of the channel to remove.
-     * @return {@code true} if the channel was successfully removed, otherwise {@code false}.
-     */
-    public boolean removeChannel(int position) {
-        // TODO
-        return false;
-    }
-
-    /**
-     * Finds the position of a channel based on its name or partial name.
-     *
-     * @param nameQuery The name or partial name to search for.
-     * @return The position of the channel if found, otherwise -1.
-     */
-    public int findChannelPosition(String nameQuery) {
-        // TODO
-        return -1;
-    }
-
-    /**
-     * Swaps the positions of two channels in the list.
-     *
-     * @param position1 The position of the first channel.
-     * @param position2 The position of the second channel.
-     * @return {@code true} if the channels were successfully swapped, otherwise {@code false}.
-     */
-    public boolean swapChannels(int position1, int position2) {
-        // TODO
-        return false;
-    }
-
-    /**
      * Retrieves the channel at the specified position.
      *
      * @param position The position of the channel to retrieve.
@@ -152,11 +101,23 @@ public class Television {
      */
     @Override
     public String toString() {
+        // Print in the following format:
+        // "Television[numberOfChannels=?, tunedChannel=?]"
+        // If there is no tuned channel, it should read "None"; otherwise
+        // use the channel's toString method.
         return "<TODO>";
     }
 
+    // TODO: Test the "Show Status" option in the main program.
+
     /**
-     * Generates a formatted list of all channels, showing their positions.
+     * Generates a formatted list of all channels, showing their positions
+     * (starting at 0). Example:
+     * <code>
+     *     0. [channel at pos 0]
+     *     1. [channel at pos 0]
+     *     ...
+     * </code>
      *
      * @return A formatted string containing the list of channels.
      */
@@ -164,11 +125,88 @@ public class Television {
         return "<TODO>";
     }
 
+    // TODO: Test the "Show Channel List" option in the main program.
+
     /**
-     * Resets the television to its factory settings, clearing all channels and
-     * loading the default set.
+     * Tunes the television to the channel at the specified position.
+     *
+     * @param position The position of the channel to tune to.
+     * @return {@code true} if the channel was successfully tuned, otherwise {@code false}.
      */
-    public void factorySettings() {
+    public boolean tunePosition(int position) {
         // TODO
+        return false;
     }
+
+    // TODO: Test the "Tune Position" option in the main program.
+
+    /**
+     * Toggles the favorite status of the currently tuned channel.
+     *
+     * @return {@code true} if the favorite status was successfully toggled, otherwise {@code false}.
+     */
+    public boolean toggleFavorite() {
+        // TODO
+        return false;
+    }
+
+    // TODO: Test the "Toggle Favorite" option in the main program.
+
+    /**
+     * Adds a new channel to the television.
+     * There cannot exist channels with the same frequency.
+     *
+     * @param channel The channel to add.
+     * @return {@code true} if the channel was successfully added, otherwise {@code false}.
+     */
+    public boolean addChannel(Channel channel) {
+        // TODO
+        return false;
+    }
+
+    // TODO: Test the "Add Channel" option in the main program.
+
+    /**
+     * Removes the channel at the specified position.
+     *
+     * @param position The position of the channel to remove.
+     * @return {@code true} if the channel was successfully removed, otherwise {@code false}.
+     */
+    public boolean removeChannel(int position) {
+        // TODO
+        return false;
+    }
+
+    // TODO: Test the "Remove Channel" option in the main program.
+
+    /**
+     * Swaps the positions of two channels in the list.
+     *
+     * @param position1 The position of the first channel.
+     * @param position2 The position of the second channel.
+     * @return {@code true} if the channels were successfully swapped, otherwise {@code false}.
+     */
+    public boolean swapChannels(int position1, int position2) {
+        // TODO
+        return false;
+    }
+
+    // TODO: Test the "Swap Channels" option in the main program.
+
+    /**
+     * Finds the position of a channel based on its name or partial name.
+     *
+     * @param nameQuery The name or partial name to search for.
+     * @return The position of the channel if found, otherwise -1.
+     */
+    public int findChannelPosition(String nameQuery) {
+        // TODO
+        return -1;
+    }
+
+    // TODO: Test the "Find Channel" option in the main program.
+
+    // TODO: Test the "Apply Factory Settings" option in the main program,
+    //       after the addition and removal of channels.
+
 }
